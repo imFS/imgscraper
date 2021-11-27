@@ -1,4 +1,4 @@
-var img_scraper = require("./iscr");
+var mangascraper = require("./iscr");
 
 let savePath = __dirname + "\\elite_class_manga\\";
 let pageDelay = 1;
@@ -13,7 +13,7 @@ async function main() {
   for (let index = 1; index < 15; index++) {
     var url = `https://classroomoftheelite.com/manga/classroom-of-the-elite-chapter-${index}/`;
     //console.log(url);
-    img_scraper.scrape(url, savePath);
+    mangascraper.scrape(url, savePath);
     await sleep(pageDelay);
   }
 }
