@@ -1,0 +1,15 @@
+{
+  "name": "imgscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "imFS",
+  "license": "MIT",
+  "dependencies": {
+    "download": "^8.0.0",
+    "x-ray": "^2.1.0"
+  }
+}
