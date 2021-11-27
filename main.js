@@ -9,6 +9,7 @@ async function sleep(i) {
   await new Promise((r) => setTimeout(r, i * 1000));
 }
 // Main
+// Download all chapters from 1 to 14 of 'Classroom of the elite'
 async function main() {
   for (let index = 1; index < 15; index++) {
     var url = `https://classroomoftheelite.com/manga/classroom-of-the-elite-chapter-${index}/`;
