@@ -3,6 +3,13 @@ var down = require("download");
 var fs = require("fs");
 const ver = "0.1";
 
+/**
+ * iscr.js
+ *
+ * Author: imFS (github.com/imFS)
+ * License: MIT
+ */
+
 var xray = new Xray();
 
 function getLastPart(str, delimiter) {
@@ -65,9 +72,8 @@ function htmlPageGen(title, imgs, path) {
   imgs.map(function (img) {
     html +=
       '<img src="' +
-      path +
-      title +
-      "/" +
+      // path +title + "/" +
+      "./" +
       img +
       '" width="728" height="auto;" border="0"></img>\n';
   });
