@@ -1,5 +1,5 @@
 # Manga Scraper
-Random fun project from js beginner, I was annoyed by the continous ads popping up. So decided to write a small tool to download the manga and read it locally instead.
+Random fun project from js beginner, I was annoyed by the continous ads popping up. So decided on writing a small tool to download the manga and read it locally instead.
 
 ### How does it work?
 It's simply a image scraper that scrapes the images from the website/downloads them and generates an index.htm file which the user opens to read the manga.
