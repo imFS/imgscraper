@@ -73,8 +73,9 @@ function htmlPageGen(title, imgs, path) {
   });
 
   // Convert last char to num and +1
-  let nc = Number(title.substring(title.length - 1)) + 1;
-  let nd = title.substring(0, title.length - 1);
+  let tsp = title.split("-");
+  let nc = Number(tsp[tsp.length - 1]) + 1;
+  let nd = title.replace("-" + (nc - 1).toString(), "") + "-";
   html += "\n</br><p>[Next chapters] (Experimental)</p>\n";
 
   let i = nc - 1;
@@ -85,7 +86,8 @@ function htmlPageGen(title, imgs, path) {
     if (i == nc - 1) {
       html += "<b>";
     }
-    html += '<a href="' + path + nd + i + '/index.htm">' + i + "</a>";
+    //html += '<a href="' + path + nd + i + '/index.htm">' + i + "</a>";
+    html += '<a href="' + "../" + nd + i + '/index.htm">' + i + "</a>";
     if (i == nc - 1) {
       html += "</b>";
     }
