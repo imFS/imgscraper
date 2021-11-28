@@ -5,4 +5,5 @@ Random fun project from js beginner, I was annoyed buy the continous ads popping
 It's simply a image scraper that scrapes the images from the website/downloads them and generates an index.htm file which the user opens to read the manga.
 
 ## Issues
-- Failing to recognize Double digits or more in page number. Can be fixed by splitting by '-' instead of taking last char of url.
+- Add support for other site templates.
+- Code cleanup/optimizations.
